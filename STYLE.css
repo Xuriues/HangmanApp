@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	padding: 0;
+	margin: auto;
+	display: block;
+	width: 500px;
+}
+th,tr {
+	align-content: center ;	
+}
+#table {
+	position: relative;
+	top:250px;
+	left: 20px;
+}
+#click,#title {
+	text-align: center;
+	width: 150px;
+}
+#score,#fail {
+	text-align: left;
+}

@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HangMan</title>
+<link type="text/css" rel="stylesheet" href="STYLE.css">
+</head>
+<script type="text/javascript" src="javascript1.js"></script>
+<body>
+	<table width="15%" border="2" bgcolor="#999999" id="table">
+	<tr>
+    		<td colspan="4" align="right">
+            	Score :<input type="text" id="score" readonly value="0" size="1"/>
+                <br />
+                Fails(6):<input type="text" id="fail" readonly value="0" size="1" />
+            </td>
+            <td colspan="7">
+				<center>
+             <input type="text" id="title" readonly="readonly" value="--Hang Man--" />
+             <input type="text" id="click" readonly="readonly" value="Click Start for a word"/>
+				</center>
+            </td>
+            <td colspan="2">
+				<center>
+            	<input type="button" value="Start" onclick="setQuestion()" id="button1"/>
+				</center>
+            </td>
+		
+    </tr>
+	<tr>
+    	<td><input type="button" value="A" onclick="Key(this.value)" /></td>
+        <td><input type="button" value="B" onclick="Key(this.value)" /></td>
+        <td><input type="button" value="C" onclick="Key(this.value)" /></td>
+        <td><input type="button" value="D" onclick="Key(this.value)" /></td>
+        <td><input type="button" value="E" onclick="Key(this.value)" /></td>
+        <td><input type="button" value="F" onclick="Key(this.value)" /></td>
+        <td><input type="button" value="G" onclick="Key(this.value)" /></td>
+        <td><input type="button" value="H" onclick="Key(this.value)" /></td>
+        <td><input type="button" value="I" onclick="Key(this.value)" /></td>
+        <td><input type="button" value="J" onclick="Key(this.value)" /></td>
+        <td><input type="button" value="K" onclick="Key(this.value)" /></td>
+        <td><input type="button" value="L" onclick="Key(this.value)" /></td>
+        <td><input type="button" value="M" onclick="Key(this.value)" /></td>
+   </tr>
+   <tr>
+   		<td><input type="button" value="N" onclick="Key(this.value)" /></td>
+        <td><input type="button" value="O" onclick="Key(this.value)" /></td>
+        <td><input type="button" value="P" onclick="Key(this.value)" /></td>
+        <td><input type="button" value="Q" onclick="Key(this.value)" /></td>
+        <td><input type="button" value="R" onclick="Key(this.value)" /></td>
+        <td><input type="button" value="S" onclick="Key(this.value)" /></td>
+        <td><input type="button" value="T" onclick="Key(this.value)" /></td>
+        <td><input type="button" value="U" onclick="Key(this.value)" /></td>
+        <td><input type="button" value="V" onclick="Key(this.value)" /></td>
+        <td><input type="button" value="W" onclick="Key(this.value)" /></td>
+        <td><input type="button" value="X" onclick="Key(this.value)" /></td>
+        <td><input type="button" value="Y" onclick="Key(this.value)" /></td>
+        <td><input type="button" value="Z" onclick="Key(this.value)" /></td>
+   </tr>
+</table>
+</body>
+</html>
+<style>
+body{
+	padding: 0;
+	margin: auto;
+	display: block;
+	width: 500px;
+}
+th,tr {
+	align-content: center ;	
+}
+#table {
+	position: relative;
+	top:250px;
+	left: 20px;
+}
+#click,#title {
+	text-align: center;
+	width: 150px;
+}
+#score,#fail {
+	text-align: left;
+}
+
+
+</style>
